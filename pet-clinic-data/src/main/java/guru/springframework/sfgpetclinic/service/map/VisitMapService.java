@@ -3,9 +3,11 @@ package guru.springframework.sfgpetclinic.service.map;
 import com.sun.xml.internal.bind.v2.model.core.ID;
 import guru.springframework.sfgpetclinic.model.Visit;
 import guru.springframework.sfgpetclinic.service.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService{
     @Override
     public Set<Visit> findAll() {
